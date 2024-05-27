@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <section id="calculadora">
+
+        <div id="numeroinicial">0</div>
+        <div id="botoes">
+            <button class="botao botao-operador" onclick="clearDisplay()">C</button>
+            <button class="botao botao-operador" onclick="appendCharacter('/')">÷</button>
+            <button class="botao botao-operador" onclick="appendCharacter('*')">x</button>
+            <button class="botao botao-laranja"  onclick="appendCharacter('-')">-</button>
+            <button class="botao" onclick="appendCharacter('7')">7</button>
+            <button class="botao" onclick="appendCharacter('8')">8</button>
+            <button class="botao"  onclick="appendCharacter('9')">9</button>
+            <button class="botao botao-laranja"  onclick="appendCharacter('+')">+</button>
+            <button class="botao" onclick="appendCharacter('4')">4</button>
+            <button class="botao" onclick="appendCharacter('5')">5</button>
+            <button class="botao" onclick="appendCharacter('6')">6</button>
+            <button class="botao botao-laranja" id="tresEspaços" onclick="calculateResult()">=</button>
+            <button class="botao" onclick="appendCharacter('1')">1</button>
+            <button class="botao" onclick="appendCharacter('2')">2</button>
+            <button class="botao" onclick="appendCharacter('3')">3</button>
+            <button class="botao" id="doisEspacos">0</button>
+            <button class="botao" onclick="appendCharacter('.')">.</button>
+        </div>
+    </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
